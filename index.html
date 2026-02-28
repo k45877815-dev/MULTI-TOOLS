@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StudentPro Tools - Free CGPA & Percentage Calculator India</title>
+<meta name="description" content="Free CGPA calculator, percentage calculator, exam countdown timer and college admission predictor for Indian students.">
+
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<div class="logo">🎓 StudentPro Tools</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="privacy-policy.html">Privacy</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>India’s Free Academic Calculators</h1>
+<p>Simple • Fast • Accurate</p>
+</section>
+
+<div class="container">
+
+<div class="tool">
+<h2>CGPA Calculator</h2>
+<input type="number" id="subjects" placeholder="Number of Subjects">
+<button onclick="generateInputs()">Generate Fields</button>
+<div id="gradeInputs"></div>
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+<div class="result" id="cgpaResult"></div>
+</div>
+
+<div class="tool">
+<h2>Percentage Calculator</h2>
+<input type="number" id="obtained" placeholder="Marks Obtained">
+<input type="number" id="total" placeholder="Total Marks">
+<button onclick="calculatePercentage()">Calculate Percentage</button>
+<div class="result" id="percentageResult"></div>
+</div>
+
+<div class="tool">
+<h2>Exam Countdown Timer</h2>
+<input type="date" id="examDate">
+<button onclick="startCountdown()">Start Countdown</button>
+<div class="result" id="countdownResult"></div>
+</div>
+
+<div class="tool">
+<h2>College Admission Predictor</h2>
+<input type="number" id="boardPercent" placeholder="12th Percentage">
+<select id="category">
+<option value="general">General</option>
+<option value="obc">OBC</option>
+<option value="scst">SC/ST</option>
+</select>
+<button onclick="predictCollege()">Predict</button>
+<div class="result" id="admissionResult"></div>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 StudentPro Tools | Built for Indian Students</p>
+</footer>
+
+</body>
+</html>
